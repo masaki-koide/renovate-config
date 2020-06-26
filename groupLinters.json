@@ -2,11 +2,8 @@
   "packageRules": [
     {
       "groupName": "linters",
-      "extends": ["packages:linters"],
-      "packageNames": ["prettier"],
-      "sourceUrlPrefixes": [
-        "https://github.com/typescript-eslint/typescript-eslint"
-      ]
+      "extends": ["packages:linters", "monorepo:typescript-eslint"],
+      "packageNames": ["prettier"]
     }
   ]
 }

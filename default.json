@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "config:base",
+    ":pinAllExceptPeerDependencies",
+    "group:definitelyTyped",
+    "github>masaki-koide/renovate-config:automergePin",
+    "github>masaki-koide/renovate-config:groupLinters"
+  ],
+  "ignorePresets": ["helpers:disableTypesNodeMajor"],
+  "labels": ["renovate"]
+}
